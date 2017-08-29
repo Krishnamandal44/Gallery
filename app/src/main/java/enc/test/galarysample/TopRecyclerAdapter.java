@@ -52,7 +52,7 @@ public class TopRecyclerAdapter extends RecyclerView.Adapter<TopRecyclerAdapter.
 //                .placeholder(R.drawable.placeholder)
 //                .error(R.drawable.error)
 //                // .getImage_url())
-//                .resize(250, 180)
+   //                 .resize(400,300)
 //                .centerCrop()
 //                .into(imageView);
 
@@ -65,6 +65,7 @@ public class TopRecyclerAdapter extends RecyclerView.Adapter<TopRecyclerAdapter.
 //                .animateLoad(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.spin_animation))
                     //this defines animation of the successfully loaded image (animate it in)
                     .animateIn(AnimationUtils.loadAnimation(context,R.anim.anim_fade_in))
+                    .resize(400,300)
                     .load(url);//Using Glide loding image
           /*  Glide.with(context)
                     .load(topRecyclerPojos.get(position).getIcon())
@@ -72,6 +73,7 @@ public class TopRecyclerAdapter extends RecyclerView.Adapter<TopRecyclerAdapter.
                     .placeholder(R.drawable.placeholder)
                     .error(R.drawable.error)
                     .crossFade()
+                    .resize(400,300)
                     .into(imageView);*/
 
     }
