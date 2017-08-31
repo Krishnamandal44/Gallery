@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import org.junit.Test;
 

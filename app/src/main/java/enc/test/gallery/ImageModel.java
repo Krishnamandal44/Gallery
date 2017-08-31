@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.os.Parcel;
 import android.os.Parcelable;

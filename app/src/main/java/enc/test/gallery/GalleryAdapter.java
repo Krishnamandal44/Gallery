@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.koushikdutta.ion.Ion;
 
 import java.util.ArrayList;

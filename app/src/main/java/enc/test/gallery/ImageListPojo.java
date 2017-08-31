@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 /**
  * Created by Admin on 29-07-2017.

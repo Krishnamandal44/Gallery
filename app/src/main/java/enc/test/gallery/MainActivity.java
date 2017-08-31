@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +9,13 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import static enc.test.galarysample.R.styleable.View;
-
 public class MainActivity extends AppCompatActivity {
     //Booking (Image Change -> Hotel,Train)
     RecyclerView recyclerView;
     ArrayList<ImageModel> data = new ArrayList<>();
     String image_url_list[]={
-            "https://www.w3schools.com/css/img_fjords.jpg",
             "https://static.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg",
+            "https://www.w3schools.com/css/img_fjords.jpg",
             "http://www.qygjxz.com/data/out/8/4421389-android-wallpaper.png",
             "https://www.androidcentral.com/sites/androidcentral.com/files/styles/w550h500/public/wallpapers/dc-superhero-suits-a8o.jpg?itok=KSU3SFs-",
             "http://www.planwallpaper.com/static/images/11-sea-beach-sand-wallpaper_sf9i1b6.jpg",
@@ -59,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(MainActivity.this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(android.view.View view, int position) {
-                for (int i=0;i<position;i++){
+
                     Intent intent = new Intent(MainActivity.this,ZoomActivity.class);
                     // String sImage =image_url_list[position];
                     // intent.putExtra("Position_Id",sImage);
@@ -69,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
 
 
-                }
+
             }
 
             @Override

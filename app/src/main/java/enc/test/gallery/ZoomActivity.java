@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,16 +7,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.koushikdutta.ion.Ion;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -54,7 +48,8 @@ public class ZoomActivity extends AppCompatActivity {
         mViewPager.setPageTransformer(true, new DepthPageTransformer());
 
         mViewPager.setAdapter(mSectionsPagerAdapter);
-        mViewPager.setCurrentItem(pos); mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        mViewPager.setCurrentItem(pos);
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
@@ -184,11 +179,13 @@ public class ZoomActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
+            PhotoView photoView=new PhotoView(getActivity());
+            photoView.setMaximumScale(16f);
+            View rootView = photoView;
 
-            final ImageView imageView = (ImageView) rootView.findViewById(R.id.detail_image);
+//            final ImageView imageView = (ImageView) rootView.findViewById(R.id.detail_image);
 
-            Glide.with(getActivity()).load(url).thumbnail(0.1f).into(imageView);
+            Glide.with(getActivity()).load(url).thumbnail(0.1f).into(photoView);
 
             return rootView;
         }

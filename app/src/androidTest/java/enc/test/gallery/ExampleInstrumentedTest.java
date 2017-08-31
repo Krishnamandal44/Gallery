@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

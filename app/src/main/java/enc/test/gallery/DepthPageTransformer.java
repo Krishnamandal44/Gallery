@@ -1,4 +1,4 @@
-package enc.test.galarysample;
+package enc.test.gallery;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;
