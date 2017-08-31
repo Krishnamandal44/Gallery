@@ -22,9 +22,6 @@ import uk.co.senab.photoview.PhotoView;
 
 public class ZoomActivity extends AppCompatActivity {
 
-
-
-    String image;
     public ArrayList<ImageModel> data = new ArrayList<>();
     private SectionsPagerAdapter mSectionsPagerAdapter;
     int pos;
@@ -54,7 +51,6 @@ public class ZoomActivity extends AppCompatActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
-
             @Override
             public void onPageSelected(int position) {
 
@@ -68,34 +64,6 @@ public class ZoomActivity extends AppCompatActivity {
 
             }
         });
-//       // image=getIntent().getExtras().getString("Position_Id");
-//        //  Picasso.with(ImageZoom.this).load(image_url_list).into(photoView);
-//   /*     Ion.with(photoView)
-//                .placeholder(R.drawable.placeholder)//image_url_list when loading
-//                .error(R.drawable.error)                            //image_url_list if error/ no connection/ wrong url etc
-//                //uncomment this line and set imageURL with wrong URL and see error image_url_list animation
-////                .animateLoad(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.spin_animation))
-//                //this defines animation of the successfully loaded image_url_list (animate it in)
-//                .animateIn(AnimationUtils.loadAnimation(ZoomActivity.this,R.anim.anim_fade_in))
-//                .load(image);*/
-///*
-//        Picasso.with(ZoomActivity.this)
-//                .load(image)
-//                .placeholder(R.drawable.placeholder)
-//                .error(R.drawable.error)
-//                // .getImage_url())
-//                         .resize(400,300)
-//                .centerCrop()
-//                .into(photoView);*/
-//
-//        /*  Glide.with(ImageZoom.this)
-//                    .load(image_url_list)
-//                    .thumbnail(0.5f)
-//                    .placeholder(R.drawable.placeholder)
-//                    .error(R.drawable.error)
-//                    .crossFade()
-//                    .resize(400,300)
-//                    .into(photoView);*/
 
     }
 

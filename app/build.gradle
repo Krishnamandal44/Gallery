@@ -39,5 +39,8 @@ dependencies {
 //For Glid
     compile 'com.github.bumptech.glide:glide:4.0.0'
 
+//For Palette
+    compile 'com.android.support:palette-v7:26.+'
+
 
 }
