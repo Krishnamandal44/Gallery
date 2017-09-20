@@ -80,15 +80,10 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(android.view.View view, int position) {
 
                     Intent intent = new Intent(MainActivity.this,ZoomActivity.class);
-                    // String sImage =image_url_list[position];
-                    // intent.putExtra("Position_Id",sImage);
                     intent.putParcelableArrayListExtra("data",data);
                     intent.putExtra("pos", position);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
-
-
-
             }
 
             @Override
